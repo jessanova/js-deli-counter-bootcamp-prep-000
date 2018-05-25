@@ -15,15 +15,15 @@ function nowServing(line){
   }
 }
 
-function currentLine(line){
+function currentLine(lines){
   var r = ""
-  if (line.length==0){
+  if (lines.length==0){
     r = "The line is currently empty."
   }else{
     r = "The line is currently: 1. "
-    r += line[0]
-    for(let i=1;i<line.length;i++){
-    r+= ", "+(i+1)+". "+line[i] 
+    r += lines[0]
+    for(let i=1;i<lines.length;i++){
+    r+= ", "+(i+1)+". "+lines[i] 
     }
   }
   return r
