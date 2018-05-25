@@ -1,17 +1,17 @@
 //var katzDeliLine = []
 
-function takeANumber(line,newName){
-  var x = line
+function takeANumber(linex,newName){
+  var x = linex
   x.push(newName)
   //return x
   return `Welcome, ${newName}. You are number ${x.length} in line.`
 }
 
-function nowServing(line){
-  if(line.length==0){
+function nowServing(linex){
+  if(linex.length==0){
     return "There is nobody waiting to be served!"
   }else{
-    return "Currently serving "+line.splice(0,1)+"."
+    return "Currently serving "+linex.splice(0,1)+"."
   }
 }
 
